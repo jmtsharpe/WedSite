@@ -1,0 +1,132 @@
+/*/ RESET /*/
+
+ html, body, header, nav, h1, a, ul, li,
+strong, main, section, img, div, h2, h4, h3, p,
+form, fieldset, label, textarea,
+button, article, footer, small, header {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: inherit;
+	font-family: inherit;
+	box-sizing: content-box;;
+	color: inherit;
+	text-align: inherit;
+	text-decoration: none;
+	background: transparent;
+	box-shadow: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+#over-container {
+	text-decoration: none;
+	font-family: cursive;
+	height: 100%;
+	box-sizing: content-box;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: url(https://d3jzug80jq9bku.cloudfront.net/assets/rileyandgrey/images/flowerparade/multi/home_bg-dc71eebc827219ac72f8e74437f39d1f.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+ul {
+	list-style: none;
+}
+
+h1 {
+	font-size: 36px;
+}
+
+/*/ CLEARFIX /*/
+
+.group:after {
+	content: "";
+	clear: both;
+	display: block;
+ }
+
+ /****/
+
+ #main-content {
+	color: white;
+	text-align: center;
+ }
+
+ #wedder {
+	font-family: "FuturaStd-Bold", sans-serif;
+	text-align: center;
+	background-color: #ffffff;
+	color: black;
+	box-shadow: 1px 1px 1px 1px;
+ }
+
+#wedder li {
+	display: inline-block;
+	padding: 30px 30px;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+#wedder li:hover {
+	background: #f5f5f5;
+}
+
+.cell-container, .cell-container {
+	text-align: center;
+	display: table-cell;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	vertical-align: middle;
+	padding: 100px;
+
+}
+
+.title-container-outer, .title-container-outer {
+	background: url(https://d3jzug80jq9bku.cloudfront.net/assets/rileyandgrey/images/flowerparade/sandpaper-5835b72ecfec1ac727e0a86977fecc60.jpg) bottom right;
+}
+
+.title-container-outer, .title-container-outer {
+    display: inline-block;
+    position: relative;
+    min-width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.title-container-inner, .title-container-inner {
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    border: 6px solid #fff;
+    text-align: center;
+}
+
+.title-container-autowidth, .title-container-autowidth {
+    padding: 0 12px;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.linedivider, .linedivider {
+    border-top: 10px solid #fff;
+    width: 88%;
+    margin: 12px auto;
+}
+
+.title {
+	font-family: sans-serif;
+}
