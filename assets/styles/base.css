@@ -10,7 +10,7 @@ button, article, footer, small, header {
 	outline: 0;
 	font-size: inherit;
 	font-family: inherit;
-	box-sizing: content-box;;
+	box-sizing: content-box;
 	color: inherit;
 	text-align: inherit;
 	text-decoration: none;
@@ -27,9 +27,8 @@ button:focus {
 
 #over-container {
 	text-decoration: none;
-	font-family: cursive;
 	height: 100%;
-	box-sizing: content-box;
+	box-sizing: border-box;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -38,6 +37,7 @@ button:focus {
 	background: url(https://d3jzug80jq9bku.cloudfront.net/assets/rileyandgrey/images/flowerparade/multi/home_bg-dc71eebc827219ac72f8e74437f39d1f.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
 ul {
@@ -46,6 +46,13 @@ ul {
 
 h1 {
 	font-size: 36px;
+}
+
+p {
+	color: black;
+	font-size: 20px;
+	font-family: sans-serif;
+	text-align: justify;
 }
 
 /*/ CLEARFIX /*/
@@ -59,8 +66,19 @@ h1 {
  /****/
 
  #main-content {
+ 	height: 600px;
+ 	width: 100%;
 	color: white;
 	text-align: center;
+	z-index: 100;
+	position: absolute;
+	left: 0;
+	top: 35px;
+	background: url("/assets/images/grey_rec.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+
  }
 
  #wedder {
@@ -69,13 +87,19 @@ h1 {
 	background-color: #ffffff;
 	color: black;
 	box-shadow: 1px 1px 1px 1px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+
+	z-index: 1000;
  }
 
 #wedder li {
 	display: inline-block;
-	padding: 30px 30px;
+	padding: 20px 20px;
 	font-weight: bold;
-	font-size: 24px;
+	font-size: 16px;
 }
 
 #wedder li:hover {
@@ -85,16 +109,17 @@ h1 {
 .cell-container, .cell-container {
 	text-align: center;
 	display: table-cell;
+	box-sizing: border-box;
 	position: absolute;
-	left: 50%;
-	transform: translateX(-50%);
+	top: 53%;
+	left: 49.4%;
+	transform: translateX(-50%) translateY(-50%);
 	vertical-align: middle;
-	padding: 100px;
 
 }
 
 .title-container-outer, .title-container-outer {
-	background: url(https://d3jzug80jq9bku.cloudfront.net/assets/rileyandgrey/images/flowerparade/sandpaper-5835b72ecfec1ac727e0a86977fecc60.jpg) bottom right;
+	background: #6F7476;
 }
 
 .title-container-outer, .title-container-outer {
@@ -130,3 +155,67 @@ h1 {
 .title {
 	font-family: sans-serif;
 }
+
+.dec-header:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 400px;
+	top: -400px;
+	z-index: -1;
+	background: url("/assets/images/green_rec.svg") no-repeat 50% 44%;
+	background-size: cover;
+	background-position: center;
+}
+
+
+
+
+
+/* BLOCKS */
+
+.block {
+	min-height: 600px;
+	width: 100%;
+	display: block;
+	position: relative;
+	margin-bottom: 800px;
+}
+
+.block:after {
+	content: "";
+	height: 300px;
+}
+
+.block-content {
+	background: #FFFFFF;
+	height: auto;
+	display: block;
+	min-height: 400px;
+	position: relative;
+	padding: 20px;
+}
+
+.black-content p {
+	font-size: 16px;
+	text-align: justify-all;
+}
+
+/***********************************/
+
+/* COUPLES SECTION */
+
+#the-couple .cell-container, #the-couple .cell-container {
+	top: -186px;
+}
+
+#the-couple .title-container-outer, #the-couple .title-container-outer {
+	background: #019C68;
+	min-width: 400px;
+	height: 200px;
+}
+
+/***********************************/
