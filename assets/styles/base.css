@@ -156,7 +156,7 @@ p {
 	font-family: sans-serif;
 }
 
-.dec-header:before {
+.section:before {
 	content: "";
 	display: block;
 	position: absolute;
@@ -166,7 +166,22 @@ p {
 	height: 400px;
 	top: -400px;
 	z-index: -1;
+}
+
+.green:before {
 	background: url("/assets/images/green_rec.svg") no-repeat 50% 44%;
+	background-size: cover;
+	background-position: center;
+}
+
+.red:before {
+	background: url("/assets/images/red_rec.svg") no-repeat 50% 44%;
+	background-size: cover;
+	background-position: center;
+}
+
+.grey:before {
+	background: url("/assets/images/grey_rec.svg") no-repeat 50% 44%;
 	background-size: cover;
 	background-position: center;
 }
@@ -203,19 +218,131 @@ p {
 	font-size: 16px;
 	text-align: justify-all;
 }
+/***********************************/
 
+/*section blocks*/
+
+
+.section-cell {
+	top: -186px;
+}
+.section-head {
+	min-width: 400px;
+	height: 200px;
+
+}
 /***********************************/
 
 /* COUPLES SECTION */
 
-#the-couple .cell-container, #the-couple .cell-container {
-	top: -186px;
+.our-story {
+	background: #019C68;
 }
 
-#the-couple .title-container-outer, #the-couple .title-container-outer {
-	background: #019C68;
-	min-width: 400px;
+/***********************************/
+
+/* THE PARTY */
+
+.the-party {
+	background: #E16F64;
+}
+
+/***********************************/
+
+/* MEMPHIS */
+
+.memphis {
+	background: #6F7476;
+}
+
+/***********************************/
+
+/* PARTY LIST */
+
+.party-head, .person-head {
+	color: #E16F64;
+	font-size: 32px;
+	font-weight: bold;
+	margin: 5px;
+}
+
+#party-list {
+
+}
+
+.person-head {
+	padding: 10px;
+	/*border: 2px solid #E16F64;*/
+}
+
+.party-person {
+	border: 2px solid #E16F64;
+	padding: 20px;
+	margin: 20px;
+}
+
+.party-blurb {
+	width: 75%;
+	color: black;
+	font-size: 20px;
+	display: inline-block;
+	text-align: justify;
+	padding: 10px;
+	vertical-align: top;
+}
+
+/***********************************/
+
+/* PARTY PICTURE FRAMES */
+
+.frame {
+	width: 200px;
 	height: 200px;
+	display: inline-block;
+	margin: 15px;
+	box-shadow: 2px 2px 2px 0px black;
+}
+
+#daphny {
+	background: url("/assets/images/bridal_party/daphny.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#james {
+	background: url("/assets/images/bridal_party/james.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#kelly {
+	background: url("/assets/images/bridal_party/kelly.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#mara {
+	background: url("/assets/images/bridal_party/mara.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#rochelle {
+	background: url("/assets/images/bridal_party/rochelle.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#annmarie {
+	background: url("/assets/images/bridal_party/annmarie.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 /***********************************/
